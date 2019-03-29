@@ -19,29 +19,19 @@ The main page consists of the weather info, map background, animation detailing 
 
 ## Display
 ### Default Display
-(index.html)
+Weather based on location
 
-![](https://imgur.com/WsdLHZB.png)
-### Tutorial Display
-(instructions.html)
+![](https://imgur.com/8Of1ov4.jpg)
+### About Page display
 
-![](https://imgur.com/TPzadsl.png)
-### Tutorial Display - Demonstration
-(instructions.html)
+![](https://imgur.com/7IXMbmK.jpg)
+### Browsing Display
 
-![](https://imgur.com/CZXrcoU.png)
-### Game Display - Level 1
-(index.html)
+![](https://imgur.com/rSFt3LD.jpg)
 
-![](https://imgur.com/EzAoPPm.png)
-### Game Display - During Game
-(index.html)
+### Other Weather Types Display
 
-![](https://imgur.com/88l06On.png)
-### Game Display - Game Over
-(index.html)
-
-![](https://imgur.com/0GIt9mz.png)
+![](https://imgur.com/sVLET3S.jpg)
 
 ## Additional Information
 Created as part of the General Assembly *Web Development Immersive* Program.
