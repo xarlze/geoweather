@@ -172,7 +172,6 @@ class App extends Component {
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${this.state.userLocation.latitude}&lon=${this.state.userLocation.longitude}&units=imperial&appid=${weatherKey}`)
         .then(response=> response.json())
         .then(json => {
-          console.log(json)
             this.setState(prevState=>{return {
                 skyCondition: json.weather[0].main,
                 main: json.weather[0].description,
