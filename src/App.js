@@ -12,6 +12,7 @@ dotenv.config();
 const googleKey = process.env.REACT_APP_GEO_API_KEY;
 const weatherKey = process.env.REACT_APP_WEATHER_API_KEY;
 const mapboxKey = process.env.REACT_APP_MAPBOX_API_KEY;
+console.log(googleKey+" "+weatherKey+" "+mapboxKey)
 const autoZoom = 13;
 
 class App extends Component {
