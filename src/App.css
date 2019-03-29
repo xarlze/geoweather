@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+
+*{
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: 700;
+}
+
+.weatherDivs{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  margin-left: 190px;
+  margin-bottom: 110px;
+  font-size: 20px;
+  transform: scale(1.3);
+  display: block;
+}
+.weatherDivs>*{
+  padding: 5px;
+  background: white;
+  margin: 0px;
+  text-align: center;
+  transition: background-color 0.5s ease-out;
+}
+.weatherDivs>*>*{
+  transition: background-color 0.5s ease-out;
+}
+.flex{
+  display: inline-flex;
+  align-items: flex-end;
+}
+.flexBut{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexBut>button{
+  width: 80px;
+}
+input{
+  margin: 0 7px;
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  font-weight: 700;
+  height: 15px;
+  font-size: 18px;
+  border: 1px dashed black;
+  padding: 4px;
+}
+button{
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px dashed black;
+  padding: 4px;
+}
+.main{
+  font-size: 19px;
+  border-bottom: 1px dashed black;
+  margin: 0 7px;
+}
+.temp{
+  border-bottom: 1px dashed black;
+  margin-left: 6px;
+}
+.num{
+  border-bottom: 1px dashed black;
+  margin:0 8px;
+}
+.zipSearchButton, .citySearchButton{
+  margin-left: 7px;
+}
+#searchable{
+  background: white;
+  color: black;
+  border-color: black;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+  50%{
+    background:#3E00FE;
+    color: white;
+    border-color: #3E00FE;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .weatherDivs{
+    transform: scale(0.95);
+    margin-left: 20px;
+    margin-bottom: 60px;
+  } 
+}
+
+@media only screen and (max-width: 800px) {
+  .weatherDivs{
+    transform: scale(0.6);
+    text-align: center;
+    margin: 150px auto;
+  } 
+}

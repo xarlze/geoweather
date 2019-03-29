@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+
+#animation{
+    z-index: 10;
+    width:100%;
+    height: 40%;
+    position: fixed;
+    pointer-events: none;
+    animation: in 0.5s ease-in-out 1;
+    top: 0%;
+}
+
+@keyframes in{
+    0%{
+        top: -70%;
+    }
+}
+
+.out{
+    top:-70%;
+    animation: out 0.5s ease-in-out 1 !important;
+}
+
+@keyframes out{
+    0%{
+        top: 0%;
+    }
+}
+
+
+#sunBar{
+    position: absolute;
+    display:block;
+    left: -5%;
+    width: 110%;
+    height: 55%;
+    border-top: 1px solid;
+    border-radius: 50%;
+    font-size:23px;
+    margin: 70px auto;
+}
+.time{
+    font-size: 25px;
+}
+
+#sun{
+    width: 117.5px;
+    height: 124px;
+    z-index: 11;
+    animation: spin 8s linear infinite;
+    transform: rotate(0deg);
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+#sunrise, #sunset{
+    text-align: center;
+    position: fixed;
+}
+#sunrise{
+    transform: rotate(-15deg);
+    left: -11%;
+    top: 13%;
+    animation: sunrise 5s ease-in-out infinite;
+}
+@keyframes sunrise{
+    50%{
+        top: 4.5%;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 110%;
+        transform: rotate(15deg);
+    }
+}
+
+#sunset{
+    transform: rotate(15deg);
+    left: 110%;
+    top: 16%;
+    animation: sunset 5s ease-in-out infinite;
+}
+@keyframes sunset{
+    50%{
+        top: 4.5%;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -11%;
+        transform: rotate(-15deg);
+        top: 14%;
+    }
+}
+
+#sunContainer{
+    top: 13%;
+    left: -15%;
+    position: fixed;
+    animation: rise 5s ease-in-out 0.5s infinite;
+}
+
+@keyframes rise{
+    50%{
+        top: 2%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
