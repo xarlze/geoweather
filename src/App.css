@@ -47,6 +47,7 @@ input{
   font-size: 18px;
   border: 1px dashed black;
   padding: 4px;
+  animation: change
 }
 button{
   font-family: 'Bungee Hairline', cursive;
