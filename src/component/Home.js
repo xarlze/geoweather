@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import './HomeNav.css';
+import './Router.css';
 
 export default class HomeNav extends Component {
     constructor(props){

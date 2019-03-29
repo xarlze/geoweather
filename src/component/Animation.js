@@ -29,6 +29,7 @@ export default class Animation extends Component {
         super(props)
         this.state = {
             isLoading: true
+
         }
     }
     static getDerivedStateFromProps(props){
@@ -94,15 +95,15 @@ export default class Animation extends Component {
             setTimeout(()=>{
                 let riseDiv = document.querySelector("#sunrise");
                 if(riseDiv){riseDiv.style.animationPlayState = 'paused';}
-            },(4300*(percentToRise/120)+600))
+            },(4300*(percentToRise/130)+600))
             setTimeout(()=>{
                 let setDiv = document.querySelector("#sunset");
                 if(setDiv){setDiv.style.animationPlayState = 'paused';}
-            },(4300*(percentToSet/120)+1090))
+            },(4300*(percentToSet/140)+1090))
             setTimeout(()=>{
                 let sunDiv = document.querySelector("#sunContainer");
                 if(sunDiv){sunDiv.style.animationPlayState = 'paused';}
-            },(4500*(percentNow/120)+790))
+            },(4300*(percentNow/130)+1100))
             let changeColor = document.querySelectorAll(".weatherDivs>*,.weatherDivs>*>*")
             changeColor.forEach(target=>{
                 target.style.backgroundColor = `${colorPalette[colorRef].main},1)`

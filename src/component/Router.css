@@ -21,11 +21,11 @@
     z-index: 20;
     text-align: center;
     position: fixed;
-    width: 800px;
+    width: 740px;
     height: 400px;
     top: 50%;
     left: 50%;
-    margin: -220px -400px;
+    margin: -220px -370px;
     display: flex;
 }
 
@@ -101,7 +101,7 @@ a{
     font-size: 16px;
     background: rgba(0, 0, 0, 1);
     border: 1px dashed black;
-    width: 275px;
+    width: 280px;
     height: 35px;
 }
 

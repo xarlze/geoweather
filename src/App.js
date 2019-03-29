@@ -3,9 +3,9 @@ import Weather from './component/Weather';
 import Map from './component/Map';
 import Animation from './component/Animation';
 import { Route } from 'react-router-dom';
-import HomeNav from './component/HomeNav';
-import AboutNav from './component/AboutNav';
-// import dotenv from 'dotenv';
+import Home from './component/Home';
+import About from './component/About';
+import dotenv from 'dotenv';
 import './App.css';
 
 dotenv.config();
@@ -376,11 +376,11 @@ class App extends Component {
         />
         <Route 
           exact path="/"
-          component={HomeNav}
+          component={Home}
         />
         <Route 
           path="/about"
-          component={AboutNav}
+          component={About}
         />
       </div>
     )
