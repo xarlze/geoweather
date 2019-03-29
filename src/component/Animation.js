@@ -103,7 +103,7 @@ export default class Animation extends Component {
             setTimeout(()=>{
                 let sunDiv = document.querySelector("#sunContainer");
                 if(sunDiv){sunDiv.style.animationPlayState = 'paused';}
-            },(4300*(percentNow/130)+1100))
+            },(4300*(percentNow/130)+1300))
             let changeColor = document.querySelectorAll(".weatherDivs>*,.weatherDivs>*>*")
             changeColor.forEach(target=>{
                 target.style.backgroundColor = `${colorPalette[colorRef].main},1)`
