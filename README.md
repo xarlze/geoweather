@@ -32,6 +32,7 @@ Weather based on location
 ### Other Weather Types Display
 
 ![](https://imgur.com/sVLET3S.jpg)
+![](https://imgur.com/zb6ZES3.jpg)
 
 ## Additional Information
 Created as part of the General Assembly *Web Development Immersive* Program.
